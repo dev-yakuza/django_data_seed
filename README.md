@@ -89,7 +89,7 @@ django_dataはジャンゴ(django)でマスターデーターやテストデー�
 下記のコマンドでdjango_exerciseレポジトリ(Repository)をコピー(Clone)します。
 
 ```bash
-git clone https://github.com/dev-yakuza/django_exercise.git
+git clone https://github.com/dev-yakuza/django_data.git
 ```
 
 下記のコマンドでパイソン仮想環境を作ります。
@@ -165,7 +165,7 @@ django_data is the repository about how to make master data or test data in djan
 execute the command below to clone the django_exercise repository.
 
 ```bash
-git clone https://github.com/dev-yakuza/django_exercise.git
+git clone https://github.com/dev-yakuza/django_data.git
 ```
 
 execute the command below to start python virtual environment.
