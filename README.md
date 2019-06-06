@@ -1,18 +1,18 @@
 ## document
-- [django_data 설명](#django_data-설명)
-- [django_data説明](#django_data説明)
-- [how to use django_data](#how-to-use-django_data)
+- [django_data_seed 설명](#django_data_seed-설명)
+- [django_data_seed説明](#django_data_seed説明)
+- [how to use django_data_seed](#how-to-use-django_data_seed)
 
-## django_data 설명
-django_data는 장고(django)에서 마스터 데이터 또는 테스트 데이터를 사용하는 방법을 정리한 저장소(Repository)입니다. 이 저장소(Repository)를 제작하면서 작성한 블로그가 있습니다. 자세한 내용은 아래에 링크를 통해 확인하시기 바랍니다.
+## django_data_seed 설명
+django_data_seed는 장고(django)에서 마스터 데이터 또는 테스트 데이터를 사용하는 방법을 정리한 저장소(Repository)입니다. 이 저장소(Repository)를 제작하면서 작성한 블로그가 있습니다. 자세한 내용은 아래에 링크를 통해 확인하시기 바랍니다.
 
 - [장고(django) 프로젝트에 마스터 데이터 넣기](https://dev-yakuza.github.io/ko/django/data-seed/)
 
 ### 사용 방법
-아래에 명령어를 통해 django_data 저장소(Repository)를 복사(Clone)합니다.
+아래에 명령어를 통해 django_data_seed 저장소(Repository)를 복사(Clone)합니다.
 
 ```bash
-git clone https://github.com/dev-yakuza/django_data.git
+git clone https://github.com/dev-yakuza/django_data_seed.git
 ```
 
 아래에 명령어로 파이썬 가상 환경을 생성합니다.
@@ -33,14 +33,14 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-데이터베이스 연동을 위해 `django_data/settings.py`를 열고 아래의 내용을 자신의 DB에 맞게 수정합니다.
+데이터베이스 연동을 위해 `django_data_seed/settings.py`를 열고 아래의 내용을 자신의 DB에 맞게 수정합니다.
 
 ```python
 ...
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'django_data',  # DB name
+        'NAME': 'django_data_seed',  # DB name
         'USER': 'root',  # DB account
         'PASSWORD': '',  # DB account's password
         'HOST': '127.0.0.1',  # DB address(IP)
@@ -80,16 +80,16 @@ python manage.py runserver
 - 관리자 페이지: [http://127.0.0.1:8000/admin](http://127.0.0.1:8000/admin)
 
 
-## django_data説明
-django_dataはジャンゴ(django)でマスターデーターやテストデーターを使う方法について纏めたレポジトリ(Repository)です。このレポジトリ(Repository)を作る時作成したブログポストがあります。詳しく内容は下記のリンクを確認してください。
+## django_data_seed説明
+django_data_seedはジャンゴ(django)でマスターデーターやテストデーターを使う方法について纏めたレポジトリ(Repository)です。このレポジトリ(Repository)を作る時作成したブログポストがあります。詳しく内容は下記のリンクを確認してください。
 
 - [ジャンゴ(django)のプロジェクトでマスターデーターを入れる方法](https://dev-yakuza.github.io/django/data-seed/)
 
 ### 使い方
-下記のコマンドでdjango_exerciseレポジトリ(Repository)をコピー(Clone)します。
+下記のコマンドでdjango_data_seedレポジトリ(Repository)をコピー(Clone)します。
 
 ```bash
-git clone https://github.com/dev-yakuza/django_data.git
+git clone https://github.com/dev-yakuza/django_data_seed.git
 ```
 
 下記のコマンドでパイソン仮想環境を作ります。
@@ -110,14 +110,14 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-データベースを連動するため、`django_exercise/settings.py`を開いて下記の内容を自分のDBに合わせて修正します。
+データベースを連動するため、`django_data_seed/settings.py`を開いて下記の内容を自分のDBに合わせて修正します。
 
 ```python
 ...
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'django_exercise',  # DB name
+        'NAME': 'django_data_seed',  # DB name
         'USER': 'root',  # DB account
         'PASSWORD': '',  # DB account's password
         'HOST': '127.0.0.1',  # DB address(IP)
@@ -156,16 +156,16 @@ python manage.py runserver
 
 - 管理画面: [http://127.0.0.1:8000/admin](http://127.0.0.1:8000/admin)
 
-## how to use django_data
-django_data is the repository about how to make master data or test data in django. there are blog posts about this repository. if you want to know more details, see the link below.
+## how to use django_data_seed
+django_data_seed is the repository about how to make master data or test data in django. there are blog posts about this repository. if you want to know more details, see the link below.
 
 - [Insert master data to django project](https://dev-yakuza.github.io/en/django/data-seed/)
 
 ### How to use
-execute the command below to clone the django_exercise repository.
+execute the command below to clone the django_data_seed repository.
 
 ```bash
-git clone https://github.com/dev-yakuza/django_data.git
+git clone https://github.com/dev-yakuza/django_data_seed.git
 ```
 
 execute the command below to start python virtual environment.
@@ -186,14 +186,14 @@ execute the command below to install modules for the project.
 pip install -r requirements.txt
 ```
 
-you need to modify `django_exercise/settings.py` to connect your database like below.
+you need to modify `django_data_seed/settings.py` to connect your database like below.
 
 ```python
 ...
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'django_exercise',  # DB name
+        'NAME': 'django_data_seed',  # DB name
         'USER': 'root',  # DB account
         'PASSWORD': '',  # DB account's password
         'HOST': '127.0.0.1',  # DB address(IP)
